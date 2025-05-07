@@ -1,0 +1,12 @@
+{
+    "/api": {
+      "target": "https://fiori-dev.pqs.hec.ondemand.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  

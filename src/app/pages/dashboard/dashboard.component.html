@@ -1,0 +1,54 @@
+<div class=" p-4 sm:ml-64">
+   <div class="border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+     <!-- 1. CHART/GRAPH SECTION || INFO-PANEL -->
+     <section>
+      <div class="grid md:grid-cols-[80%_20%]">
+         <div class="chart">
+            <app-graph-chart></app-graph-chart>
+   
+         </div>
+         <div class="info w-full p-4">
+            <app-info-panel></app-info-panel>
+            
+         </div>
+   
+      </div>
+   </section>
+   </div>
+ </div>
+<!-- ------------------------------------------------------------------------ -->
+  <div class="p-4 sm:ml-64">
+   <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 ">
+
+    <app-kpi-card></app-kpi-card>
+    <app-top-items-vendors-tabs></app-top-items-vendors-tabs>
+   <div class="container my-4">
+  @for (item of Apis; track item.Pernr) {
+   <div class="card shadow rounded-4 p-3">
+     <div class="row text-center">
+       <div class="col-md-3 mb-2">
+         <h6 class="text-muted">PERNR</h6>
+         <p class="fw-bold text-primary">{{ item.Pernr }}</p>
+       </div>
+       <div class="col-md-3 mb-2">
+         <h6 class="text-muted">Sales Name</h6>
+         <p class="fw-bold text-dark">{{ item.SalesName }}</p>
+       </div>
+       <div class="col-md-3 mb-2">
+         <h6 class="text-muted">Target</h6>
+         <p class="fw-bold text-success">{{ item.Target }}</p>
+       </div>
+       <div class="col-md-3 mb-2">
+         <h6 class="text-muted">Achieved</h6>
+         <p class="fw-bold text-danger">{{ item.Achieved }}</p>
+       </div>
+     </div>
+   </div>
+ }
+   </div>
+
+ 
+    
+   </div>
+ </div>
+

@@ -1,0 +1,752 @@
+   
+ 
+     <!-- 2. CARDS: Sales | Statistics | Break Even | Ours -->
+     <div class="grid grid-cols-4 gap-4 mb-6">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1">
+        <!-- Header -->
+        <div class="w-full flex justify-between items-center mb-4">
+          <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+            <i class="fas fa-share-alt me-1"></i> Sales
+          </h6>
+          <div class="relative inline-block text-left">
+            <button id="salesDropdown" type="button"
+              class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+              aria-expanded="true" aria-haspopup="true">
+              Today
+              <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+              </svg>
+            </button>
+            <!-- Dropdown -->
+            <div
+              class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu" aria-orientation="vertical" aria-labelledby="salesDropdown">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Sales Value -->
+        <div class="mb-4">
+          <p class="text-3xl font-bold text-blue-600">6,258,980</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">1,233 / 1</p>
+        </div>
+      
+        <!-- Sales Details -->
+        <div class="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+          <p><span class="font-semibold">S.D:</span> 36,330</p>
+          <p><span class="font-semibold">All Sales:</span> 6,295,310</p>
+          <p><span class="font-semibold">Tot Discount:</span> 168,391 <span class="text-red-500">(2.69%)</span></p>
+          <p><span class="font-semibold">Return:</span> 926,487</p>
+          <p><span class="font-semibold">Return %:</span> 12.89</p>
+          <p><span class="font-semibold">Target:</span> 0</p>
+          <p><span class="font-semibold">Achieved %:</span> 0</p>
+          <p><span class="font-semibold">Remaining:</span> 0</p>
+          <p><span class="font-semibold">Remaining %:</span> 100</p>
+          <p><span class="font-semibold">STP:</span> 17,607,501</p>
+          <p><span class="font-semibold">STP %:</span> 35.55</p>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header -->
+        <div class="w-full flex justify-between items-center mb-4">
+          <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+            <i class="fas fa-chart-bar mr-1"></i> Statistics
+          </h6>
+          <div class="relative inline-block text-left">
+            <button id="statisticsDropdown" type="button"
+              class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+              aria-expanded="true" aria-haspopup="true">
+              Today
+              <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+              </svg>
+            </button>
+            <!-- Dropdown -->
+            <div
+              class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu" aria-orientation="vertical" aria-labelledby="statisticsDropdown">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Progress + Stats Group 1 -->
+        <div class="w-full mb-2">
+          <div class="h-2 rounded bg-blue-200 mb-1">
+            <div class="h-full bg-blue-500 rounded" style="width: 96.32%"></div>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>S.D</span>
+            <span class="text-right">0</span>
+            <span class="text-right">0%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>Tenders</span>
+            <span class="text-right">230,421</span>
+            <span class="text-right">3.68%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-4">
+            <span>Order</span>
+            <span class="text-right">6,028,559</span>
+            <span class="text-right">96.32%</span>
+          </div>
+        </div>
+      
+        <!-- Progress + Stats Group 2 -->
+        <div class="w-full mb-2">
+          <div class="h-2 rounded bg-gray-300 mb-1">
+            <div class="h-full bg-gray-600 rounded" style="width: 22.67%"></div>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>Open S.D</span>
+            <span class="text-right">0</span>
+            <span class="text-right">0%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>Open Tender</span>
+            <span class="text-right">15,403,953</span>
+            <span class="text-right">77.33%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-4">
+            <span>Open Order</span>
+            <span class="text-right">4,515,715</span>
+            <span class="text-right">22.67%</span>
+          </div>
+        </div>
+      
+        <!-- Progress + Stats Group 3 -->
+        <div class="w-full mb-2">
+          <div class="h-2 rounded bg-green-200 mb-1">
+            <div class="h-full bg-green-500 rounded" style="width: 83.72%"></div>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>Tele</span>
+            <span class="text-right">617,392</span>
+            <span class="text-right">16.28%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>Cosmetics</span>
+            <span class="text-right">0</span>
+            <span class="text-right">0%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-4">
+            <span>Order</span>
+            <span class="text-right">3,175,140</span>
+            <span class="text-right">83.72%</span>
+          </div>
+        </div>
+      
+        <!-- Progress + Stats Group 4 -->
+        <div class="w-full">
+          <div class="h-2 rounded bg-yellow-200 mb-1">
+            <div class="h-full bg-yellow-500 rounded" style="width: 100%"></div>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+            <span>AM</span>
+            <span class="text-right">6,028,559</span>
+            <span class="text-right">100%</span>
+          </div>
+          <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300">
+            <span>PM</span>
+            <span class="text-right">0</span>
+            <span class="text-right">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header -->
+        <div class="w-full flex justify-between items-center mb-4">
+            <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                <i class="fas fa-share-alt mr-1"></i> Break Even Point
+            </h6>
+            <div class="relative inline-block text-left">
+                <button id="bepDropdown" type="button"
+                    class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+                    aria-expanded="true" aria-haspopup="true">
+                    MTD
+                    <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu" aria-orientation="vertical" aria-labelledby="bepDropdown">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Break Even Point Progress -->
+        <div class="w-full mb-4">
+            <div class="h-2 rounded bg-blue-200 mb-1">
+                <div class="h-full bg-blue-500 rounded" style="width: 5.38%"></div>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Target</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Sales</span>
+                <span class="text-right">587,115,171</span>
+                <span class="text-right">5.38%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Collect</span>
+                <span class="text-right">-18,146,389</span>
+                <span class="text-right">5.38%</span>
+            </div>
+        </div>
+    
+        <!-- Expenses Details -->
+        <div class="w-full mb-4">
+            <strong class="text-sm font-semibold text-gray-800 dark:text-gray-200">Expenses Details</strong>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Salaries</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Commission</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Rent</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Bank</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Cars</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm text-gray-700 dark:text-gray-300 mb-2">
+                <span>Others</span>
+                <span class="text-right">0</span>
+                <span class="text-right">0%</span>
+            </div>
+            <div class="grid grid-cols-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+                <span>Total</span>
+                <span class="text-right">0</span>
+            </div>
+        </div>
+    
+        <!-- Details Link -->
+        <div class="mt-4">
+            <a href="#" class="text-sm text-blue-500 hover:underline">Details</a>
+        </div>
+     </div>
+     <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+      <!-- Header Section -->
+      <div class="w-full flex justify-between items-center mb-4">
+        <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+          <i class="fas fa-share-alt mr-1"></i> Ours
+        </h6>
+        <div class="relative inline-block text-left">
+          <button id="oursDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+            Today
+            <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+            </svg>
+          </button>
+          <!-- Dropdown -->
+          <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="oursDropdown">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="grid grid-cols-1 mb-10"> <!-- Use a single column layout -->
+        <!-- Chart Section -->
+        <div class="chart-container mb-10">
+          <canvas id="oursChart" style="height: 300px;"></canvas> <!-- Ensure the canvas has height -->
+        </div>
+      
+        <!-- Client Data Section -->
+        <div class="clients-section space-y-4">
+          <div class="client-row flex justify-between items-center">
+            <span class="client-name text-primary font-semibold">NowFoods</span>
+            <div class="client-data text-sm text-gray-500">
+              <span><strong>Client</strong> 100</span>
+            </div>
+          </div>
+          <div class="client-row flex justify-between items-center">
+            <span class="client-name text-primary font-semibold">Sofiguard</span>
+            <div class="client-data text-sm text-gray-500">
+              <span><strong>Client</strong> 10</span>
+            </div>
+          </div>
+          <div class="client-row flex justify-between items-center">
+            <span class="client-name text-primary font-semibold">CosmaLine</span>
+            <div class="client-data text-sm text-gray-500">
+              <span><strong>Client</strong> 5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  
+     </div>
+     <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+     <!-- 2. CARDS:  API | Inventory | Purchase | COLLECT -->
+     <div class="grid grid-cols-4 gap-4 mb-6">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header Section -->
+        <div class="w-full flex justify-between items-center mb-4">
+            <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                <i class="fas fa-share-alt mr-1"></i> KPI
+            </h6>
+            <div class="relative inline-block text-left">
+                <button id="salesDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                    Today
+                    <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="salesDropdown">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+    
+        <!-- Client Data Section -->
+        <div class="w-full">
+            <div class="client-row mb-2 flex justify-between items-center">
+                <span class="client-name text-primary">NowFoods</span>
+                <div class="client-data text-sm text-gray-700 dark:text-gray-300">
+                    <span><strong>Client</strong> 100</span>
+                    <span><strong>Value</strong> 543,690</span>
+                    <span><strong>%</strong> 98.73</span>
+                </div>
+            </div>
+            <div class="client-row mb-2 flex justify-between items-center">
+                <span class="client-name text-primary">Sofiguard</span>
+                <div class="client-data text-sm text-gray-700 dark:text-gray-300">
+                    <span><strong>Client</strong> 10</span>
+                    <span><strong>Value</strong> 4,630</span>
+                    <span><strong>%</strong> 0.84</span>
+                </div>
+            </div>
+            <div class="client-row mb-2 flex justify-between items-center">
+                <span class="client-name text-primary">CosmaLine</span>
+                <div class="client-data text-sm text-gray-700 dark:text-gray-300">
+                    <span><strong>Client</strong> 5</span>
+                    <span><strong>Value</strong> 2,389</span>
+                    <span><strong>%</strong> 0.43</span>
+                </div>
+            </div>
+            <div class="client-row mb-2 flex justify-between items-center">
+                <span class="client-name text-primary">CosmaLine</span>
+                <div class="client-data text-sm text-gray-700 dark:text-gray-300">
+                    <span><strong>Client</strong> 5</span>
+                    <span><strong>Value</strong> 2,389</span>
+                    <span><strong>%</strong> 0.43</span>
+                </div>
+            </div>
+            <div class="client-row mb-2 flex justify-between items-center">
+                <span class="client-name text-primary">CosmaLine</span>
+                <div class="client-data text-sm text-gray-700 dark:text-gray-300">
+                    <span><strong>Client</strong> 5</span>
+                    <span><strong>Value</strong> 2,389</span>
+                    <span><strong>%</strong> 0.43</span>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header Section -->
+        <div class="w-full flex justify-between items-center mb-4">
+            <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                <i class="fas fa-chart-bar mr-1"></i> Collect
+            </h6>
+            <div class="relative inline-block text-left">
+                <button id="statisticsDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                    Today
+                    <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="statisticsDropdown">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sales Value Section -->
+        <div class="sales-value-section mb-4">
+            <p class="text-2xl font-bold text-purple-600">6,258,980</p>
+            <p class="text-sm text-gray-500">1,233 / 1</p>
+        </div>
+    
+        <!-- Sales Details Section -->
+        <div class="sales-details space-y-2">
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">S.D</span> 36,330</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">All Sales</span> 6,295,310</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Tot Discount</span> 168,391 <span class="percentage text-green-500">(2.69%)</span></p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Return</span> 926,487</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Return %</span> 12.89</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Target</span> 0</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Achieved %</span> 0</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Remaining</span> 0</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">Remaining %</span> 100</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">STP</span> 17,607,501</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300"><span class="font-semibold">STP%</span> 35.55</p>
+        </div>
+      </div> 
+
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header Section -->
+        <div class="w-full flex justify-between items-center mb-4">
+            <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                <i class="fas fa-share-alt mr-1"></i> Inventory
+            </h6>
+            <div class="relative inline-block text-left">
+                <button id="bepDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                    MTD
+                    <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="bepDropdown">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maximum Rate -->
+        <div class="bep-percentage mb-4">
+            <span class="bep-value text-xl font-semibold text-blue-500">5.38%</span>
+            <p class="text-sm text-gray-500">Maximum Rate</p>
+        </div>
+
+        <!-- BEP Content -->
+        <div class="bep-content space-y-4">
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Target</span>
+                <span>0</span>
+            </div>
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Sales</span>
+                <span>587,115,171</span>
+            </div>
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Collect</span>
+                <span>-18,146,389</span>
+            </div>
+        </div>
+
+        <!-- Expenses Section -->
+        <div class="expenses-section mt-4">
+            <strong class="text-lg">Expenses Details</strong>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Salaries</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Commission</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Rent</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Bank</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Cars</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Others</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-total flex justify-between items-center font-semibold">
+                <span>Total</span> <span>0</span>
+            </div>
+        </div>
+
+        <!-- Details Link -->
+        <div class="details-link mt-4 text-blue-500">
+            <a href="#">Details</a>
+        </div>
+      </div>
+
+      
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header Section -->
+        <div class="w-full flex justify-between items-center mb-4">
+            <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                <i class="fas fa-share-alt mr-1"></i> Inventory
+            </h6>
+            <div class="relative inline-block text-left">
+                <button id="bepDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                    MTD
+                    <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="bepDropdown">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Maximum Rate -->
+        <div class="bep-percentage mb-4">
+            <span class="bep-value text-xl font-semibold text-blue-500">5.38%</span>
+            <p class="text-sm text-gray-500">Maximum Rate</p>
+        </div>
+
+        <!-- BEP Content -->
+        <div class="bep-content space-y-4">
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Target</span>
+                <span>0</span>
+            </div>
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Sales</span>
+                <span>587,115,171</span>
+            </div>
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Collect</span>
+                <span>-18,146,389</span>
+            </div>
+        </div>
+
+        <!-- Expenses Section -->
+        <div class="expenses-section mt-4">
+            <strong class="text-lg">Expenses Details</strong>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Salaries</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Commission</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Rent</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Bank</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Cars</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Others</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-total flex justify-between items-center font-semibold">
+                <span>Total</span> <span>0</span>
+            </div>
+        </div>
+
+        <!-- Details Link -->
+        <div class="details-link mt-4 text-blue-500">
+            <a href="#">Details</a>
+        </div>
+      </div>
+      
+      
+
+      
+ 
+    
+     </div>
+     <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+     <!-- 3. CARDS: Calls | Attendance -->
+     <div class="grid grid-cols-4 gap-4 mb-6">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+        <!-- Header Section -->
+        <div class="w-full flex justify-between items-center mb-4">
+            <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                <i class="fas fa-share-alt mr-1"></i> Calls
+            </h6>
+            <div class="relative inline-block text-left">
+                <button id="bepDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                    MTD
+                    <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="bepDropdown">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Maximum Rate -->
+        <div class="bep-percentage mb-4">
+            <span class="bep-value text-xl font-semibold text-blue-500">5.38%</span>
+            <p class="text-sm text-gray-500">Maximum Rate</p>
+        </div>
+    
+        <!-- BEP Content -->
+        <div class="bep-content space-y-4">
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Target</span>
+                <span>0</span>
+            </div>
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Sales</span>
+                <span>587,115,171</span>
+            </div>
+            <div class="bep-row flex justify-between items-center">
+                <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+                <span class="font-semibold">Collect</span>
+                <span>-18,146,389</span>
+            </div>
+        </div>
+    
+        <!-- Expenses Section -->
+        <div class="expenses-section mt-4">
+            <strong class="text-lg">Expenses Details</strong>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Salaries</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Commission</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Rent</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Bank</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Cars</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-row flex justify-between items-center">
+                <span>Others</span> <span>0</span> <span>0%</span>
+            </div>
+            <div class="expenses-total flex justify-between items-center font-semibold">
+                <span>Total</span> <span>0</span>
+            </div>
+        </div>
+    
+        <!-- Details Link -->
+        <div class="details-link mt-4 text-blue-500">
+            <a href="#">Details</a>
+        </div>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col items-start col-span-1 w-full">
+      <!-- Header Section -->
+      <div class="w-full flex justify-between items-center mb-4">
+          <h6 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+              <i class="fas fa-share-alt mr-1"></i> Attendance
+          </h6>
+          <div class="relative inline-block text-left">
+              <button id="bepDropdown" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" aria-expanded="true" aria-haspopup="true">
+                  MTD
+                  <svg class="-mr-1 ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7l3-3 3 3m0 6l-3 3-3-3" />
+                  </svg>
+              </button>
+              <!-- Dropdown -->
+              <div class="hidden absolute z-10 mt-2 w-36 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="bepDropdown">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">Today</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Week</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Month</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600" role="menuitem">This Year</a>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Maximum Rate -->
+      <div class="bep-percentage mb-4">
+          <span class="bep-value text-xl font-semibold text-blue-500">5.38%</span>
+          <p class="text-sm text-gray-500">Maximum Rate</p>
+      </div>
+  
+      <!-- BEP Content -->
+      <div class="bep-content space-y-4">
+          <div class="bep-row flex justify-between items-center">
+              <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+              <span class="font-semibold">Target</span>
+              <span>0</span>
+          </div>
+          <div class="bep-row flex justify-between items-center">
+              <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+              <span class="font-semibold">Sales</span>
+              <span>587,115,171</span>
+          </div>
+          <div class="bep-row flex justify-between items-center">
+              <span class="bep-icon text-green-500"><i class="fas fa-chart-line"></i></span>
+              <span class="font-semibold">Collect</span>
+              <span>-18,146,389</span>
+          </div>
+      </div>
+  
+      <!-- Expenses Section -->
+      <div class="expenses-section mt-4">
+          <strong class="text-lg">Expenses Details</strong>
+          <div class="expenses-row flex justify-between items-center">
+              <span>Salaries</span> <span>0</span> <span>0%</span>
+          </div>
+          <div class="expenses-row flex justify-between items-center">
+              <span>Commission</span> <span>0</span> <span>0%</span>
+          </div>
+          <div class="expenses-row flex justify-between items-center">
+              <span>Rent</span> <span>0</span> <span>0%</span>
+          </div>
+          <div class="expenses-row flex justify-between items-center">
+              <span>Bank</span>
+  
+      
+     </div>
+ 
+   </div>
+    </div>
+   </div>
